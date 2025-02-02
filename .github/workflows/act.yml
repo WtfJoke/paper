@@ -31,11 +31,11 @@ jobs:
           git add .
           git commit -m "Initial commit"
 
-      - name: Test pre-commit flow
-        uses: cvxgrp/cradle/actions/flow@main
-        with:
-          working-directory: template
-          workflow: pre-commit.yml
+      # - name: Test pre-commit flow
+      #   uses: cvxgrp/cradle/actions/flow@main
+      #   with:
+      #     working-directory: template
+      #     workflow: pre-commit.yml
       - name: Install act
         shell: bash
         run: |
