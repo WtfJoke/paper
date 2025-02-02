@@ -72,10 +72,9 @@ runs:
           ${{ runner.os }}-tectonic-
 
     - name: Install Tectonic and biber
-      uses: wtfjoke/setup-tectonic@v3
+      uses: wtfjoke/setup-tectonic@withoutGitHubToken
       with:
         biber-version: '2.17'
-
       #shell: bash
       #run: |
       #  # install tectonic in the directory you run from
